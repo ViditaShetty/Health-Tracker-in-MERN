@@ -1,0 +1,104 @@
+
+  .controls {
+    margin: 2rem 0 1rem 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .mealInput {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .MealButton {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #3616b4c8;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color:rgb(243, 239, 239);
+  }
+  
+  .MealButton:hover {
+    background-color: #6c13d1;
+    cursor: pointer;
+  }
+  
+  .ListofMeals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 20px;
+  }
+  
+  .nutrients ul {
+    display: flex;
+    width: 35rem;
+    justify-content: space-evenly;
+  }
+  
+  .meals {
+    display: flex;
+  }
+  
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 1rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+  }
+  
+  .MacrosUL {
+    list-style: none;
+  }
+  
+  .instructions {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mealA {
+    text-decoration: none;
+    background-color: #7f21eb;
+    color: #f3f3f3;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+  }
+  
+  .mealA:hover {
+    background-color: #6c13d1;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .meals {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nutrients ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
