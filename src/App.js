@@ -264,7 +264,7 @@ const[cal,setCal]=useState('2500');
       </ThemeProvider>
     </>
     :
-    <div style={{backgroundColor:"black",width:"1599px",height:"1500px",margin:"-10px"}}>
+    <div style={{backgroundColor:"black",width:"100vw",height:"100vh",margin:"-10px"}}>
       <img src={logoo} style={{width:"170px",marginTop:"100px",marginLeft:"650px"}}></img>
       <div style={{color:"white",marginTop:"10px",marginLeft:"500px",fontWeight:"700",fontSize:"60px"}}>HEALTH TRACKER </div>
       <div style={{color:"white",marginTop:"10px",marginLeft:"650px",fontWeight:"700",fontSize:"60px"}}>

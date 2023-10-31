@@ -165,7 +165,7 @@ import {useState,useEffect} from 'react';
                   </VuiBox>
                   <VuiBox sx={{ height: "310px" }}>
                     {/*************CHART LOADED WITH ONLY INTITIAL 2 VALUES AND DID NOT UPDATE AFTER UPDATING LINEWEEKDATA ARRAY */}
-                    {lineWeekData.Move[3]?  ///*************IF THE WEEKLY DATA HAS BEEN LOADED AFTER THE 2 DEFAULT ELEMENTS ONLY THEN RENDER CHART SINCE IT RENDERS ONLY ONCE */
+                    {//lineWeekData.Move[2]?  ///*************IF THE WEEKLY DATA HAS BEEN LOADED AFTER THE 2 DEFAULT ELEMENTS ONLY THEN RENDER CHART SINCE IT RENDERS ONLY ONCE */
                     <LineChart
                       lineChartData={ [
                         {
@@ -182,9 +182,9 @@ import {useState,useEffect} from 'react';
                       ]}
                       lineChartOptions={lineChartOptionsDashboard}
                     />
-                    :
-                    null
-                    }
+                   // :
+                   // null
+                   }
                   </VuiBox>
                 </VuiBox> 
                      {console.log("WEEK DATE MOVE=",lineWeekData.Move)}
