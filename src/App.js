@@ -56,7 +56,7 @@ import Billing from "layouts/billing";
 //COOKIES=STORING LOGIN INO SINCE AFTER LOGIN = STATE CHANGE= THUS RE-RENDER/RELOAD OF PAGE LOSES INFO
 //ERROR 403=ADD  scope={'https://www.googleapis.com/auth/fitness.activity.read'}  TO GAPI.INIT AND GOOGLE LOGIN
 
-
+import "react-datepicker/dist/react-datepicker.css"
 export default function App() {
 
 //////*********ADDED ********/
