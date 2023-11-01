@@ -24,8 +24,7 @@ const events = [
     {
         title: "Big Meeting",
         allDay: true,
-        start: new Date(2021, 6, 0),
-        end: new Date(2021, 6, 0),
+        start: new Date(2023, 10, 0),
     },
     {
         title: "Vacation",
@@ -49,8 +48,8 @@ function Calendarr() {
 
             const d1 = new Date (allEvents[i].start);
             const d2 = new Date(newEvent.start);
-            const d3 = new Date(allEvents[i].end);
-            const d4 = new Date(newEvent.end);
+            const d3 = new Date(allEvents[i].start);
+            const d4 = new Date(newEvent.start);
     
           console.log(d1 <= d2);
           console.log(d2 <= d3);
@@ -58,14 +57,14 @@ function Calendarr() {
           console.log(d4 <= d3);
             
 
-             if (
+       {/**     if (
               ( (d1  <= d2) && (d2 <= d3) ) || ( (d1  <= d4) &&
                 (d4 <= d3) )
               )
             {   
                 alert("CLASH"); 
                 break;
-             }
+             } */} 
     
         }
         
@@ -77,8 +76,8 @@ function Calendarr() {
         <div className="Call">
             <h1>Food Chart</h1>
             <div>
-                <input type="text" placeholder="Add Title" style={{ width: "20%", marginLeft: "400px",background:"transparent",border:"1px solid white",padding:"3px 6px" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
-                <DatePicker placeholderText="+" style={{ marginRight: "10px",background:"transparent"  }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start,start })} />
+                <input type="text" placeholder="Add Title" style={{ width: "20%", marginLeft: "400px",background:"transparent",border:"1px solid white",padding:"3px 6px",color:"white" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
+                <DatePicker placeholderText="📆   " style={{ marginRight: "10px",background:"transparent",minWidth:"fitContent" }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start,start })} />
                 <button style={{ margin: "10px 20px",border:"none",borderRadius:"100px",background:"blue",padding:"10px 20px",color:"white",border:"1px solid white"}} onClick={handleAddEvent}>
                     Add Entry
                 </button>
