@@ -40,16 +40,19 @@ function Calendarr() {
     var [allEvents, setAllEvents] = useState(events);
 
     useEffect(()=>{
-        localStorage.getItem('foods').split(",").map((i)=>{
-            //setAllEvents([...allEvents,{title:(i.split("*****")[0]), start:(i.split("*****")[1])  }] );
-            
-            allEvents=[...allEvents,{title:(i.split("*****")[0]), start:(new Date(i.split("*****")[1])),end:(i.split("*****")[1])  }]
-            console.log("Allevents**&&&&*===",allEvents,{title:(i.split("*****")[0]), start:(i.split("*****")[1]) ,end:(i.split("*****")[1]) })
+        if(!localStorage.getItem('foods')){localStorage.setItem('foods')}
+        else{
+            localStorage.getItem('foods').split(",").map((i)=>{
+                //setAllEvents([...allEvents,{title:(i.split("*****")[0]), start:(i.split("*****")[1])  }] );
+                
+                allEvents=[...allEvents,{title:(i.split("*****")[0]), start:(new Date(i.split("*****")[1])),end:(i.split("*****")[1])  }]
+                console.log("Allevents**&&&&*===",allEvents,{title:(i.split("*****")[0]), start:(i.split("*****")[1]) ,end:(i.split("*****")[1]) })
 
-        })
-        setAllEvents(allEvents)
-        //setAllEvents(localStorage.getItem('foods'))
-        console.log("Allevents***===",allEvents)
+            })
+            setAllEvents(allEvents)
+            //setAllEvents(localStorage.getItem('foods'))
+            console.log("Allevents***===",allEvents)
+         }
     },[])
 
     function handleAddEvent() {

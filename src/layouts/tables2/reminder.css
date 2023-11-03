@@ -118,6 +118,7 @@ Nav{
 .react-datetime-picker__inputGroup__input{
     width:fit-content !important;
     border:none;
+    padding:0px 2px
 }
 
 .react-datetime-picker__wrapper{
@@ -125,5 +126,6 @@ Nav{
 }
 
 .react-datetime-picker__clear-button ,.react-datetime-picker__calendar-button {
-    border:none
+    border:none;
+    padding: 0px 18px;
 }

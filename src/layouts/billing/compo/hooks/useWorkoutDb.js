@@ -55,7 +55,6 @@ function useWorkoutDb() {
     dispatch({ type: ACTIONS.FETCHING_EXERCISES });
 
     return database.exercises
-      .where("userId", "==", user.uid)
       .onSnapshot((snapshot) => {
         dispatch({
           type: ACTIONS.SET_EXERCISES,
@@ -68,7 +67,6 @@ function useWorkoutDb() {
     dispatch({ type: ACTIONS.FETCHING_WORKOUTS });
 
     return database.workouts
-      .where("userId", "==", user.uid)
       .onSnapshot((snapshot) => {
         dispatch({
           type: ACTIONS.SET_WORKOUTS,

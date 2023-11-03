@@ -63,21 +63,16 @@ function Dashboard() {
 
   return (
     <div className="space-y-10 w-full">
-      <main className="lg:flex lg:space-x-10 space-y-5 lg:space-y-0"><Row>
+      <main className="lg:flex lg:space-x-10 space-y-5 lg:space-y-0"><Row style={{borderRadius: "26px",marginTop: "10%",marginRight: "4%"}}>
         <section className="lg:w-72  text-white rounded-xl" style={{width:"30%"}}>
           <Col><div className="p-5 space-y-10">
             <h2 className="text-lg text-primary">Workouts</h2>
               <h5 className="font-light text-sm text-white">TOTAL</h5>
                 {isFetchingWorkouts ? 0 : workouts.length}
           </div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
           <WorkoutChart />
         </Col></section>
-        <section className="flex-grow  rounded-xl lg:flex" style={{width:"70%",paddingTop:"4%",paddingBottom:"10%"}}>
+        <section className="flex-grow  rounded-xl lg:flex" style={{width:"45%",paddingTop:"2%",paddingBottom:"10%"}}>
            <div className="p-10 space-y-10">
             <h2 className="text-lg text-primary">Calories</h2>
               <h5 className="font-light text-sm text-white">TODAY :
