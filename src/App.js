@@ -119,8 +119,8 @@ export default function App() {
   }
   
   function handleLoginFailure(response) {
-    console.log("Failed to login",{response});
-    alert('Failed to log in');
+    console.log("Failed to login. Please allow 3rd party cookies 👁️‍🗨️ ",{response});
+    alert('Failed to log in.. Please allow 3rd party cookie👁️‍🗨️.');
   }
   function handleLogoutFailure(response) {
     alert('Failed to log out');

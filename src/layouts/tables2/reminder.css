@@ -1,5 +1,5 @@
 .container{
-    max-width: 1140px;
+    max-width: 1440px;
     
 }
 
@@ -47,7 +47,6 @@
 }
 
 .homepage_header > input{
-    border: 1px solid grey;
     outline: none;
     color: black;
     margin: 0.5rem 0;

@@ -64,7 +64,7 @@ function Tables2(){
                     <div className="homepage">
                     <div className="homepage_header">
                       <h1 style={{fontSize:"25px"}}>Remind Me! </h1>
-                      <input type="text" placeholder="Enter Name" value={reminderMsg} onChange={e => setReminderMsg(e.target.value)} style={{backgroundColor:"#white"}} />
+                      <input type="text" placeholder="Enter Name" value={reminderMsg} onChange={e => setReminderMsg(e.target.value)} style={{backgroundColor:"white"}} />
                       <DateTimePicker 
                         value={remindAt}
                         onChange={setRemindAt}
@@ -76,8 +76,10 @@ function Tables2(){
                         yearPlaceholder="YYYY"
                         className="DateTimePicker"
                       />
+                      
                       <div className="button" onClick={addReminder}>Add Reminder</div>
                     </div>
+
                     <div className="homepage_body">
                       {
                         reminderList.map( reminder => (
