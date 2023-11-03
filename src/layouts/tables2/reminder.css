@@ -114,3 +114,16 @@ div.nav> button > div > svg{
 Nav{
     box-shadow: grey;
 }
+
+.react-datetime-picker__inputGroup__input{
+    width:fit-content !important;
+    border:none;
+}
+
+.react-datetime-picker__wrapper{
+    display: flex;
+}
+
+.react-datetime-picker__clear-button ,.react-datetime-picker__calendar-button {
+    border:none
+}
