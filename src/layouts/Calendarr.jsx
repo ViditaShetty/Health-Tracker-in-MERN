@@ -40,7 +40,7 @@ function Calendarr() {
     var [allEvents, setAllEvents] = useState(events);
 
     useEffect(()=>{
-        if(!localStorage.getItem('foods')){localStorage.setItem('foods')}
+        if(!localStorage.getItem('foods')){localStorage.setItem('foods',"")}
         else{
             localStorage.getItem('foods').split(",").map((i)=>{
                 //setAllEvents([...allEvents,{title:(i.split("*****")[0]), start:(i.split("*****")[1])  }] );
